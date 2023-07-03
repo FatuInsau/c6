@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-size: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: blue;
+    height: 100px;
+}
+
+nav {
+    background-color: red;
+    height: 80px;
+}
+
+main {
+    background-color: orange;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: rgb(106, 177, 106);
+    height: 100px;
+}
+
+footer {
+    background-color: green;
+    height: 50px;
+}
+
+@media (min-width: 500px) {
+    .container {
+        flex-direction: row;
+    }
+
+    main {
+        flex-grow: 3;
+    }
+
+    aside {
+        flex-grow: 1;
+        height: 100%;
+    }
+}
